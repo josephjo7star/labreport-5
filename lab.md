@@ -60,7 +60,7 @@ Since all the method in this file is correct, there is no stderr. Hence, the nex
 if [ -s error.txt ]
 	then
 ```
-instead, it will run the else statement and redirect the Junit output to a file and show us with 'echo'
+instead, it will run the else statement and redirect the Junit output to a file and echo it to us
 ```ruby
 else
 	echo "Compilation success"
