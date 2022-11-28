@@ -19,13 +19,8 @@ then
 	else
 		echo "Compilation success"
 		java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples > output.txt
-		if [ "$(grep -o E output.txt | wc -l)" != 0 ]
-		then
-		  echo "Errors!"
-		  echo "$(cat output.txt | tail -n2)"
-		else
-		  echo "No errors!"
-		fi
+		echo "$(cat output.txt | tail -n2)"
+
 	fi
 else
 	echo "ListExamples file not found"
